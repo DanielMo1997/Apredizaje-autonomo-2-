@@ -1,0 +1,49 @@
+import random
+
+lista = [ 'piedra', 'papel', 'tijera']
+
+while True:
+    computadora = (random.choice (lista)) 
+    Jugador = None
+    
+    while Jugador not in lista: 
+        Jugador = input('piedra, papel o tijera:')
+    
+    if Jugador == computadora:
+        print('computadora' , computadora)
+        print('Jugador: ' , Jugador)
+        print('Empate:')
+    elif Jugador == 'piedra':
+         if computadora == 'papel':
+            print('computadora: ', computadora)
+            print('Jugador: ', Jugador)
+            print('Perdiste babas:')
+         if computadora == 'tijera':
+            print('computadora: ', computadora)
+            print('Jugador: ', Jugador)
+            print('Ganaste bien por ti:')
+    elif Jugador == 'papel':
+         if computadora == 'tijera':
+            print('computadora: ', computadora)
+            print('Jugador: ', Jugador)
+            print('Perdiste babas:')
+         if computadora == 'Ganaste bien por ti':
+            print('computadora: ', computadora)
+            print('Jugador: ', Jugador)
+            print('Ganaste bien por ti:')
+    elif Jugador == 'tijera': 
+         if computadora == 'piedra':
+            print('computadora: ', computadora)
+            print('Jugador: ', Jugador)
+            print('Perdiste babas:')
+         if computadora == 'papel':
+            print('computadora: ', computadora)
+            print('Jugador: ', Jugador)
+            print('Ganaste bien por ti:')
+
+    Jugar_de_nuevo = input('quieres jugar de nuevo? (si/no): ').lower()
+
+    if Jugar_de_nuevo != 'si': 
+        break
+
+print('adios')
