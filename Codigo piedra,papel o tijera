@@ -27,7 +27,7 @@ while True:
             print('computadora: ', computadora)
             print('Jugador: ', Jugador)
             print('Perdiste babas:')
-         if computadora == 'Ganaste bien por ti':
+         if computadora == 'piedra':
             print('computadora: ', computadora)
             print('Jugador: ', Jugador)
             print('Ganaste bien por ti:')
